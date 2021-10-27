@@ -3,7 +3,7 @@ import 'package:flutter_my_card/src/config/image_constants.dart';
 import 'package:flutter_my_card/src/config/color_constants.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_my_card/src/config/string_constants.dart'
-    as string_constant;
+as string_constant;
 
 class Splash extends StatelessWidget {
   const Splash({

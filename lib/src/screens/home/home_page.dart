@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_my_card/src/config/color_constants.dart';
 import 'package:flutter_my_card/src/config/image_constants.dart';
 import 'package:flutter_my_card/src/config/string_constants.dart'
-    as string_constant;
+as string_constant;
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 
@@ -184,28 +184,25 @@ class _MainCardState extends State<MainCard> {
             onBackgroundImageError: _loadImageError
                 ? null
                 : (_, __) {
-                    setState(() {
-                      _loadImageError = true;
-                    });
-                  },
+              setState(() {
+                _loadImageError = true;
+              });
+            },
             child: _loadImageError
                 ? const Text(
-                    string_constant.errorLoadingImage,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 14.0,
-                      fontFamily: 'Roboto',
-                    ),
-                  )
+              string_constant.errorLoadingImage,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+                fontFamily: 'Roboto',
+              ),
+            )
                 : null),
       ),
     );
   }
 }
 
-// Image.network(
-//                 AllImages().defaultImage,
-//               )
 class Logo extends StatelessWidget {
   const Logo({
     Key? key,
